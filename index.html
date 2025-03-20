@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Day</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Birthday Surprise">
+    <meta property="og:description" content="Click to see your special birthday surprise!">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
+</head>
+<body>
+    <div class="container">
+        <!-- Name Input Section -->
+        <div id="name-input-section">
+            <h2>Who would you like to wish?</h2>
+            <div class="input-container">
+                <input type="text" id="recipient-name" placeholder="Enter name..." maxlength="30">
+                <button id="start-button"><i class="fas fa-gift"></i> Create Surprise</button>
+            </div>
+        </div>
+
+        <div id="gift-box" class="hidden">
+            <div class="gift">
+                <div class="gift-top"></div>
+                <div class="gift-body"></div>
+                <div class="ribbon"></div>
+                <div class="click-message">Click me!</div>
+            </div>
+            <div class="sparkles">
+                <i class="fas fa-sparkles sparkle"></i>
+                <i class="fas fa-sparkles sparkle"></i>
+                <i class="fas fa-sparkles sparkle"></i>
+            </div>
+        </div>
+        <div id="surprise" class="hidden">
+            <div class="balloons-container">
+                <div class="balloon" style="--color: #ff4081;"></div>
+                <div class="balloon" style="--color: #3f51b5;"></div>
+                <div class="balloon" style="--color: #4caf50;"></div>
+                <div class="balloon" style="--color: #ff9800;"></div>
+                <div class="balloon" style="--color: #9c27b0;"></div>
+                <div class="balloon" style="--color: #00bcd4;"></div>
+                <div class="balloon" style="--color: #f44336;"></div>
+                <div class="balloon" style="--color: #ffeb3b;"></div>
+                <div class="balloon" style="--color: #673ab7;"></div>
+            </div>
+            <div class="cake">
+                <div class="cake-base"></div>
+                <div class="cake-middle"></div>
+                <div class="cake-top"></div>
+                <div class="candle">
+                    <div class="flame"></div>
+                </div>
+            </div>
+            <h1 class="birthday-text surprise-text">Surprise!</h1>
+            <h1 class="birthday-text name-text">Happy Birthday <span id="display-name">Friend</span>!</h1>
+            <div class="confetti-container"></div>
+            <button id="replay-button"><i class="fas fa-redo"></i> Replay</button>
+            
+            <!-- Share Section -->
+            <div id="share-section" class="hidden">
+                <h3>Share this birthday surprise!</h3>
+                <div class="share-link-container">
+                    <input type="text" id="share-link" readonly>
+                    <button id="copy-button"><i class="fas fa-copy"></i> Copy Link</button>
+                </div>
+                <div class="social-buttons">
+                    <a href="#" class="social-share" data-platform="whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="social-share" data-platform="facebook" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-share" data-platform="twitter" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-share" data-platform="email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Made with <i class="fas fa-heart"></i> | <a href="https://github.com/Razee4315" target="_blank">Saqlain Abbas</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
